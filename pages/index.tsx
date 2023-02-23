@@ -19,7 +19,29 @@ export default function Home() {
           Checkout
         </div>
       </div>
-      <div className="bg-white p-10 rounded-3xl shadow-xl"></div>
+      <div className="bg-blue-500 rounded-3xl shadow-xl">
+        <div className="p-6 pb-16 flex justify-between">
+          <span className="text-white text-xl">Profile</span>
+          <span className="text-white text-xl">🇺🇸</span>
+        </div>
+        <div className="rounded-[32px] p-6 bg-white relative -top-5 h-[70%]">
+          <div className="flex justify-between items-end relative -top-16">
+            <div className="flex flex-col items-center relative top-4 left-3">
+              <span className="mb-[5px] text-sm text-gray-500">Orders</span>
+              <span className="font-medium">340</span>
+            </div>
+            <div className="h-24 w-24 bg-red-400 rounded-full" />
+            <div className="flex flex-col items-center relative top-4 right-3">
+              <span className="mb-[5px] text-sm text-gray-500">Spent</span>
+              <span className="font-medium">$2,310</span>
+            </div>
+          </div>
+          <div className="flex flex-col items-center -mt-7 -mb-10">
+            <span className="font-medium text-lg">Tony Molloy</span>
+            <span className="text-sm text-gray-500">New York, USA</span>
+          </div>
+        </div>
+      </div>
       <div className="bg-white p-10 rounded-3xl shadow-xl"></div>
       <div className="bg-white p-10 rounded-3xl shadow-xl"></div>
     </div>
