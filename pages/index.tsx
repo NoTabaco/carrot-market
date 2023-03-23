@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="bg-slate-400 py-20 px-10 grid gap-10">
+    <div className="bg-slate-400 py-20 px-10 grid gap-10 min-h-screen">
       <div className="bg-white p-7 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
         <div className="flex justify-between my-2">
@@ -30,7 +30,7 @@ export default function Home() {
               <span className="mb-[5px] text-sm text-gray-500">Orders</span>
               <span className="font-medium">340</span>
             </div>
-            <div className="h-24 w-24 bg-red-400 rounded-full" />
+            <div className="h-24 w-24 bg-gray-300 rounded-full" />
             <div className="flex flex-col items-center relative top-4 right-3">
               <span className="mb-[5px] text-sm text-gray-500">Spent</span>
               <span className="font-medium">$2,310</span>
@@ -42,8 +42,42 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white p-10 rounded-3xl shadow-xl"></div>
-      <div className="bg-white p-10 rounded-3xl shadow-xl"></div>
+      <div className="bg-white p-7 rounded-3xl shadow-xl mt-[22px]">
+        <div className="flex justify-between items-center mb-5">
+          <span>⬅️</span>
+          <div className="space-x-4">
+            <span>🌟 &nbsp;4.9</span>
+            <span className="shadow-xl p-2 rounded-md">💖</span>
+          </div>
+        </div>
+        <div className="bg-zinc-400 h-60 mb-3" />
+        <div className="flex flex-col">
+          <span className="font-medium text-xl">Swoon Lounge</span>
+          <span className="text-xs text-gray-500">Chair</span>
+          <div className="mt-1 mb-6 flex justify-between items-center">
+            <div>
+              <input type="radio" />
+              <input type="radio" />
+              <input type="radio" />
+            </div>
+            <div className="flex items-center space-x-4">
+              <button className="bg-blue-200 flex justify-center items-center aspect-square w-9 text-xl text-gray-500 rounded-lg">
+                -
+              </button>
+              <span>1</span>
+              <button className="bg-blue-200 flex justify-center items-center aspect-square w-9 text-xl text-gray-500 rounded-lg">
+                +
+              </button>
+            </div>
+          </div>
+          <div className="flex justify-between items-center">
+            <span className="font-medium text-2xl">$450</span>
+            <button className="py-2 px-8 bg-blue-500 text-sm text-center text-white rounded-lg">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
