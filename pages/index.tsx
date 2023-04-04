@@ -55,22 +55,10 @@ export default function Home() {
           <span className="font-medium text-xl">Swoon Lounge</span>
           <span className="text-xs text-gray-500">Chair</span>
           <div className="mt-1 mb-6 flex justify-between items-center">
-            <div className="space-x-1">
-              <input
-                type="radio"
-                name="radio_button_modifiers"
-                className="checked:accent-pink-500 w-5 h-5"
-              />
-              <input
-                type="radio"
-                name="radio_button_modifiers"
-                className="checked:accent-indigo-500 w-5 h-5"
-              />
-              <input
-                type="radio"
-                name="radio_button_modifiers"
-                className="checked:accent-purple-500 w-5 h-5"
-              />
+            <div className="space-x-2">
+              <button className="bg-pink-500 w-5 h-5 rounded-full focus:ring-2 ring-offset-2 ring-pink-500 transition" />
+              <button className="bg-indigo-500 w-5 h-5 rounded-full focus:ring-2 ring-offset-2 ring-indigo-500 transition" />
+              <button className="bg-purple-500 w-5 h-5 rounded-full focus:ring-2 ring-offset-2 ring-purple-500 transition" />
             </div>
             <div className="flex items-center space-x-4">
               <button className="bg-blue-200 flex justify-center items-center aspect-square w-9 text-xl text-gray-500 rounded-lg">
