@@ -3,14 +3,21 @@ export default function Home() {
     <div className="bg-slate-400 py-20 px-10 grid gap-10 min-h-screen">
       <div className="bg-white p-7 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
-        <div className="flex justify-between my-2">
-          <span className="text-gray-500">Grey Chair</span>
-          <span className="font-semibold">$19</span>
-        </div>
-        <div className="flex justify-between">
-          <span className="text-gray-500">Tooly Table</span>
-          <span className="font-semibold">$19</span>
-        </div>
+        <ul>
+          {[1, 2, 3, 4].map((_, index) => (
+            <div key={index} className="flex justify-between my-2">
+              <span className="text-gray-500">Grey Chair</span>
+              <span className="font-semibold">$19</span>
+            </div>
+          ))}
+        </ul>
+        <ul>
+          {["a", "b", "c", ""].map((item, index) => (
+            <li key={index} className="bg-red-500 py-2 empty:hidden">
+              {item}
+            </li>
+          ))}
+        </ul>
         <div className="mt-2 pt-2 border-t-2 border-dashed flex justify-between">
           <span>Total</span>
           <span className="font-semibold">$38</span>
